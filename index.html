@@ -24,6 +24,7 @@ footer{background:#0b1429;color:#aab6cb;padding:30px 0}.footer-inner{display:fle
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
 </style>
 </head>
+
 <body>
 <header>
   <div class="wrap nav">
@@ -33,6 +34,7 @@ footer{background:#0b1429;color:#aab6cb;padding:30px 0}.footer-inner{display:fle
     <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
   </div>
 </header>
+
 <main>
 <section class="hero" id="home">
  <div class="wrap hero-grid">
@@ -47,17 +49,43 @@ footer{background:#0b1429;color:#aab6cb;padding:30px 0}.footer-inner{display:fle
   </div>
  </div>
 </section>
+
 <div class="trust"><div class="wrap trust-inner"><strong>PEOPLE</strong><span>+</span><strong>TECHNOLOGY</strong><span>+</span><strong>OPPORTUNITY</strong><span>—</span><strong>CONNECTED.</strong></div></div>
+
 <section id="about">
  <div class="wrap about-grid">
   <div class="about-panel reveal"><div class="kicker">Who we are</div><blockquote>“People, technology and opportunity — <span>connected.</span>”</blockquote></div>
-  <div class="about-copy reveal"><div class="kicker">About 3AXIS GLOBAL</div><div class="section-head" style="margin:10px 0 20px"><h2>Building connections that move businesses forward.</h2></div>
-   <p>3AXIS GLOBAL is a global talent and business solutions company focused on creating strong connections between skilled professionals and organizations that need the right expertise.</p>
-   <p>Our approach combines an understanding of people with a practical understanding of modern technology and business needs. We support candidates throughout their career journey and help employers identify, engage and connect with qualified talent.</p>
-   <div class="principles"><span class="pill">People-first approach</span><span class="pill">Technology-driven</span><span class="pill">Global perspective</span></div>
-  </div>
- </div>
+ <div class="about-copy reveal"><div class="kicker">About 3AXIS GLOBAL</div>
+
+<div class="container">
+        <h1>Connecting Global Talent. Empowering Business Growth.</h1>
+
+        <h2>The Right Talent. The Right Opportunities. The Right Connections.</h2>
+
+        <p>
+            3AXIS GLOBAL is a global recruitment and manpower solutions
+            company committed to connecting exceptional talent with
+            leading organizations worldwide.
+        </p>
+
+        <p>
+            We help businesses build stronger teams through reliable,
+            end-to-end recruitment solutions while empowering
+            professionals with career opportunities that match their
+            skills, experience, and ambitions.
+        </p>
+
+        <p>
+            With a people-first approach, industry expertise, and a
+            commitment to excellence, we make recruitment simpler,
+            smarter, and more effective.
+        </p>
+
+        <h3>3AXIS GLOBAL – Bridging Talent and Opportunity, Worldwide.</h3>
+
+        </div>
 </section>
+
 <section class="services" id="services">
  <div class="wrap">
   <div class="section-head reveal"><div class="kicker">What we do</div><h2>Talent and opportunity, brought together.</h2><p>We work across both sides of the talent connection — supporting professionals and helping organizations find the expertise they need.</p></div>
@@ -68,6 +96,7 @@ footer{background:#0b1429;color:#aab6cb;padding:30px 0}.footer-inner{display:fle
   </div>
  </div>
 </section>
+
 <section class="quote"><div class="wrap quote-inner reveal"><div class="quote-mark">“</div><blockquote>The right people create the right momentum. <span>We make those connections happen.</span></blockquote></div></section>
 <section id="contact">
  <div class="wrap contact-grid">
@@ -88,7 +117,10 @@ footer{background:#0b1429;color:#aab6cb;padding:30px 0}.footer-inner{display:fle
  </div>
 </section>
 </main>
-<footer><div class="wrap footer-inner"><div><img src="3axis-global-logo.PNG" alt="3AXIS GLOBAL logo" style="display:block;width:175px;height:58px;object-fit:contain;object-position:left center"><div class="footer-copy">Connecting exceptional talent with organizations ready to grow.</div></div><div class="footer-links"><a href="#about">About</a><a href="#services">What we do</a><a href="#contact">Contact</a></div><div class="footer-copy">© <span id="year"></span> 3AXIS GLOBAL</div></div></footer>
+
+<footer><div class="wrap footer-inner"><div><img src="3axisglobal/3axisg/3axis-global-logo.PNG" alt="3AXIS GLOBAL logo" style="display:block;width:175px;height:58px;object-fit:contain;object-position:left center"><div class="footer-copy">Connecting exceptional talent with organizations ready to grow.</div></div><div class="footer-links"><a href="#about">About</a><a href="#services">What we do</a><a href="#contact">Contact</a></div><div class="footer-copy">© <span id="year"></span> 3AXIS GLOBAL</div></div>
+</footer>
+
 <script>
 const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
 menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
@@ -97,4 +129,6 @@ document.getElementById('year').textContent=new Date().getFullYear();
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
-</body></html>
+
+</body>
+</html>
